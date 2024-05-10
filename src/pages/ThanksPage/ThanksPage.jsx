@@ -1,7 +1,5 @@
 function ThanksPage() {
-  return (
-    <div>ThanksPage</div>
-  )
+  return <div>ThanksPage</div>;
 }
 
-export default ThanksPage
+export default ThanksPage;
