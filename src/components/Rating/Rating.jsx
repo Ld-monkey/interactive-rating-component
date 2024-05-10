@@ -7,12 +7,13 @@ function Rating({ rating, setRating }) {
           className={`size-[42px] sm:size-[51px] items-center justify-center rounded-full bg-dark-blue
           font-bold text-medium-grey before:flex hover:cursor-pointer hover:bg-orange
           hover:text-white ${rating === index + 1 && 'bg-medium-grey text-white'}
-          focus-visible:ring-offset-4 focus-visible:ring-orange focus-visible:ring-2 outline-none
-          focus:ring-offset-dark-blue focus-visible:bg-orange focus:text-white`}
+          focus-visible:ring-offset-4 focus-visible:ring-orange focus-visible:ring-2
+          outline-none focus:ring-offset-dark-blue focus-visible:bg-orange
+          focus:text-white pt-1 text-sm sm:text-[15px]`}
           type="button"
           onClick={() => setRating(index + 1)}
         >
-          <p className="mt-1 text-sm sm:text-[15px]">{index + 1}</p>
+          {index + 1}
         </button>
       ))}
     </div>
