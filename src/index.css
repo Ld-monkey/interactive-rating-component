@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Overpass', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./assets/fonts/overpass-v13-latin-regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./assets/fonts/overpass-v13-latin-700.woff2');
+  font-weight: 700;
+}
